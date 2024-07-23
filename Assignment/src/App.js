@@ -27,7 +27,7 @@ function App() {
         </Routes>
       </BrowserRouter> */}
       <Item/>
-      ,Genderize>
+      <Genderize/>
     </div>
   );
 }
