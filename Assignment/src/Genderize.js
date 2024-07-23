@@ -15,9 +15,9 @@ let Genderize = () => {
     return(
         <div>
             <h1>Genderize</h1>
-            <input type="text" name="name" value={name} onChange={setname}/>
+            <input type="text" name="name" value={name} onChange={(e)=>(setname(e.target.value))}/>
             <button onClick={check}>Check</button>
-            <p>Gender: {details}</p>
+            <p>Gender: {details.gender}</p>
         </div>
     );
 }
