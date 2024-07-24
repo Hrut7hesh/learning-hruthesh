@@ -10,13 +10,13 @@ import Calculator from './Calculator';
 import Student from './Student';
 import Login from './Login';
 import Item from './Item';
-import Genderize from './Genderize'
+import Genderize from './Genderize';
+import Github from './Github';
 import { BrowserRouter,Routes, Link, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <h1>Main Page</h1>
       {/* <BrowserRouter>
         <Link to="/todo">Todo</Link>
         <Link to="/login/Lets-login/123">Login</Link>
@@ -26,8 +26,9 @@ function App() {
           <Route path="/login/:title/:tokenId" element={<Login />} />
         </Routes>
       </BrowserRouter> */}
-      <Item/>
-      <Genderize/>
+      {/* <Item/> */}
+      {/* <Genderize/> */}
+      <Github/>
     </div>
   );
 }

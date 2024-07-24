@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 let Genderize = () => {
     let [name, setname] = useState("Enter Name");
@@ -6,7 +6,8 @@ let Genderize = () => {
     function check(){
         axios.get(`https://api.genderize.io/?name=${name}`)
             .then(function(response){
-                setdetails(response.data.gender); 
+                setdetails(response.data);
+                console.log(response.data);
             })
             .catch(error => {
                 console.error( error);
