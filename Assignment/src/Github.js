@@ -15,9 +15,9 @@ let Github = () => {
     }
     return(
         <div>
-            <h1>Github Profile</h1>
+            <h1 className="github">Github Profile</h1>
             <input type="text" name="name" value={name} onChange={(e)=>(setname(e.target.value))}/>
-            <button onClick={check}>Check</button>
+            <button onClick={check}>Check</button><br/>
             <img src={details.avatar_url} alt="profile-Image"/>
             <h3>Id is {details.id}</h3>
         </div>
