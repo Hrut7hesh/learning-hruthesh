@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function multiply_curried(a){
+        //     return function(b){
+        //         return function(c){
+        //             return a*b*c;
+        //         }
+        //     }
+        // }
+        // let mc1 = multiply_curried(1);
+        // let mc2 = mc1(2);
+        // let res = mc2(3);
+        // console.log(res);
+        // let multiply_curried = (a) => (b) => (c) =>{
+        //     return a*b*c;
+        // }
+        // let res = multiply_curried(1)(2)(3)
+        // console.log(res);
+        // var func = function() {
+        //     console.log(this)
+        // }.bind(1);
+        // func();
+        // var func = function() {
+        //     console.log(this)
+        // }.bind(1);
+        // var obj = {
+        //     callFun : func
+        // }
+        // obj.callFun.func();
+        // function checkFun(a, b, c){
+        //     console.log(this);
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log(c);
+        // }
+        // checkFun.call(1,2,3,4);
+        // function checkFun(a, b, c){
+        //     console.log(this);
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log(c);
+        // }
+        // checkFun.apply(1,[2,3,4]);
+        // function sumOfNumbers() {
+        //     var total = 0;
+        //     for(var i = 0; i < arguments.length; i++){
+        //         total += arguments[i];
+        //     }
+        //     return total;
+        // }
+        // var sum = sumOfNumbers.apply(null,[1,2,3]);
+        // console.log(sum);
+        // var updateZipCode = function (newZip, country) {
+        //     console.log(newZip + ' ' + country);
+        // };
+        // var zipCode = {
+        //     zip: '11787'
+        // };
+        // updateZipCode.call(zipCode, '11888', 'us');
+        // "use strict";
+        // var zipcode = {
+        //     checkZipcode : function() {
+        //         console.log(this);
+        //         var updateZipCode = function() {
+        //             console.log(this);
+        //         }.bind(this);
+        //         updateZipCode();
+        //     }
+        // }
+        // zipcode.checkZipcode();
+        "use strict";
+        var person = {
+            name : "Jack",
+            prop : {
+                name : "Daniel",
+                getName : function() {
+                    return this.name;
+                } 
+            } 
+        }
+        var name = person.prop.getName.bind(person);
+        console.log(name());
+        var name = person.prop.getName();
+        console.log(name);
+    </script>
+</body>
+</html>
