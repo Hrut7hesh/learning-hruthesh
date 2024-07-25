@@ -52,10 +52,11 @@
 .Login{
   border-color: grey;
   width: 25%;
+  margin:auto;
 }
 .Login input{
   padding: 5px;
-  margin: 10px;
+  margin: auto;
   border-radius: 10px;
   border: 2px solid cyan;
   display: block;

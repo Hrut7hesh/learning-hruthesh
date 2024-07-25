@@ -1,12 +1,24 @@
-function Menu(){
-    return(
+import { Link } from "react-router-dom";
+function Menu(props){
+    return(                                                                                     
         <div className="Menu">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Team</a>
-            <a href="#">Office Location</a>
+            {
+                props.menuData.map(function(val){
+                    return(
+                    <Link to={val.path}>{val.title}</Link>       
+                )
+                })
+            }
         </div>
     );
 }
 export default Menu;
+
+
+// props.menuData.map(function (val,index){
+//     <div>
+//     <Link to=val.path>val.title</Link>
+//     <Link to=val.path>val.title</Link>
+//     <Link to=val.path>val.title</Link>
+//     </div>
+// })}
