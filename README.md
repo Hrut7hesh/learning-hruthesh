@@ -6,9 +6,9 @@ This project demonstrates the Agile methodology by creating a `ProductDetails` c
 
 ## Team Members
 
+- Gelle Hruthesh Reddy
 - Raghunath Singh
 - Swarna Sai Sreekar
-- Gelle Hruthesh Reddy
 - Manish Rathod
 
 ## Task Overview
