@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams, useNavigate,Link } from "react-router-dom";
+import './App.css';
 
 function Fake() {
     const [details, setDetails] = useState([]);
@@ -39,7 +40,6 @@ function Fake() {
 
     function handleCategoryClick(category) {
         setSelectedCategory(category);
-
     }
 
     return (
@@ -66,17 +66,13 @@ function Fake() {
                             <b>Price:</b> ${val.price}
                         </div>
                         <div>
-                            <b>Description:</b> {val.description}
-                        </div>
-                        <div>
                             <b>Category:</b> {val.category}
                         </div>
                         <div>
-                            <b>Image:</b> <img src={val.image} alt={val.title} className="product-image" />
+                            <img src={val.image} alt={val.title} className="product-image" />
                         </div>
                         <div>
-                            <b>Rating:</b> {val.rating.rate}
-                            <b>Count:</b> {val.rating.count}
+                            <b>Rating:</b> {val.rating.rate} <b>out of 5 stars</b><br/>
                         </div>
                         
                         <Link to={`/${val.category}/${val.id}`}><button>Details</button></Link>
