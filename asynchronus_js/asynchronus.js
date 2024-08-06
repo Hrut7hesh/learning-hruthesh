@@ -123,7 +123,7 @@ async function kitchen(){
     try{
         await time(2000)
         console.log(`${stocks.Fruits[0]} was selected`)
-        await time(0000)
+        await time(0)
         console.log("production has started")
         await time(2000)
         console.log("fruit has been chopped")
