@@ -1,0 +1,10 @@
+<div class="category-list">
+    <h1>Categories</h1>
+    <ul>
+      <li *ngFor="let category of categories">
+        <h2>{{ category.name }}</h2>
+        <p>{{ category.description }}</p>
+        <p><strong>Created At:</strong> {{ category.created_at | date }}</p>
+      </li>
+    </ul>
+  </div>

@@ -1,0 +1,13 @@
+<div class="product-list">
+    <h1>Products</h1>
+    <div *ngFor="let product of products" class="product-item">
+      <h2>{{ product.name }}</h2>
+      <p><strong>Excerpt:</strong> {{ product.excerpt }}</p>
+      <p><strong>Description:</strong> {{ product.description }}</p>
+      <p><strong>Price:</strong> ${{ product.price }}</p>
+      <p><strong>Stock:</strong> {{ product.stock }}</p>
+      <p><strong>Category:</strong> {{ product.category.name }}</p>
+      <p><strong>Created At:</strong> {{ product.created_at | date }}</p>
+    </div>
+  </div>
+  
