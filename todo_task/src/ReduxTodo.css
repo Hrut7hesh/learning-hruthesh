@@ -1,0 +1,66 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+select {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: blue;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+.todo-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.todo-item div {
+  margin-bottom: 5px;
+}
+
+.todo-item button {
+  margin-right: 5px;
+  background-color: red;
+}
+
+.todo-item button.edit-button {
+  background-color: green;
+}
+
+.todo-item button:hover {
+  background-color: darkred;
+}
+
+.todo-item button.edit-button:hover {
+  background-color: darkgreen;
+}
+  

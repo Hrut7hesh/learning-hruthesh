@@ -1,0 +1,35 @@
+.todo-details-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-details-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.todo-details-container div {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #555;
+}
+
+.todo-details-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.todo-details-container a:hover {
+    text-decoration: underline;
+}
