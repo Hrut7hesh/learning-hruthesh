@@ -14,6 +14,7 @@ const ProductList = ({ searchResults, onEdit, onDelete }) => {
 
     return (
         <div className="product-list-container">
+            <h1>Product List</h1>
             {searchResults.length === 0 ? (
                 <p className="no-products-message">No products found.</p>
             ) : (

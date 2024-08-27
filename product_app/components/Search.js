@@ -76,7 +76,7 @@ const SearchForm = ({ onSearchResults }) => {
                         >
                             <option value="">All</option>
                             <option value="available">Available</option>
-                            <option value="not-available">Not Available</option>
+                            <option value="not available">Not Available</option>
                         </select>
                     )}
                 </div>

@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -10,7 +10,6 @@ h1 {
   text-align: center;
 }
 
-/* Product Form Styles */
 .product-form-container,
 .search-form-container {
   margin-bottom: 20px;
@@ -122,6 +121,20 @@ h1 {
 
 .edit-button:hover {
   background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
 }
 
 .no-products-message,
