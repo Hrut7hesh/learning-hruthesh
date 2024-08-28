@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import ImageUpload from './fileUpload/ImageUpload';
-import ResumeUpload from './fileUpload/ResumeUpload';
-import VideoUpload from './fileUpload/VideoUpload';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import ImageUpload from "./fileUpload/ImageUpload";
+import ResumeUpload from "./fileUpload/ResumeUpload";
+import VideoUpload from "./fileUpload/VideoUpload";
 
 const App = () => {
   return (
@@ -21,8 +21,6 @@ const App = () => {
       </div>
     </div>
   );
-}
+};
 
 export default App;
-
-
