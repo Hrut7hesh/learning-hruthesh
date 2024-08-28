@@ -13,6 +13,7 @@ var todosRouter = require('./routes/todoapi');
 var carsRouter = require('./routes/car_rental_registration');
 var booksRouter = require('./routes/books');
 var categoryRouter = require('./routes/category');
+const filesRouter=require("./routes/filesMulter");
 const mongoose = require("mongoose");
 
 var app = express();
@@ -27,6 +28,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -36,6 +38,7 @@ app.use('/todos', todosRouter);
 app.use('/cars', carsRouter);
 app.use('/books', booksRouter);
 app.use('/category', categoryRouter);
+app.use("/file",filesRouter);
 
 let mongoConnUrl = "mongodb://localhost/ascendion";
 mongoose.connect(mongoConnUrl);

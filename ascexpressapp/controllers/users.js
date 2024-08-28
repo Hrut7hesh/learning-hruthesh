@@ -1,6 +1,7 @@
 const User = require("../models/users");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+require("dotenv").config();
 
 exports.createUser = async function(req, res, next) {
     let user = await User.findOne({
@@ -48,7 +49,7 @@ exports.login = async function(req, res){
     };
     jwt.sign(
         payload,
-        "ascendion_secret",
+        process.env.JWT_SECRET,
         {
             expiresIn: 1200,
         },

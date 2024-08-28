@@ -1,10 +1,12 @@
 const jwt = require("jsonwebtoken")
+require("dotenv").config();
+
 module.exports = function(req, res, next){
     const token = req.header("token");
     if(!token) return res.status(401)
         .json({message:"Token not received"});
     try {
-        const decodedToken = jwt.verify(token, "ascendion_secret");
+        const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
         console.log(decodedToken);
         req.id = decodedToken.user.id;
         req.email = decodedToken.user.email;
